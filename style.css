@@ -1,0 +1,203 @@
+.wrapper {
+  background-color: lightblue;
+  position: relative;
+  width: 800px;
+  height: 500px;
+}
+
+img.guy {
+  height: auto;
+  width: 15%;
+  margin-top: 22%;
+  margin-left: 7%;
+  -webkit-transform: rotate(-14deg);
+  -ms-transform: rotate(-14deg);
+  transform: rotate(-14deg);
+}
+
+/*********
+***********     BULLET   ********************
+*********************************************/
+
+.beam {
+  position: absolute;
+  left: -100px;
+  height: 20px;
+  width: 4px;
+  background: red;
+  -webkit-transform: rotate(75deg);
+  -ms-transform: rotate(75deg);
+  transform: rotate(75deg);
+  -webkit-animation: bullet 1s 3s linear;
+  animation: bullet 1s 3s linear;
+}
+
+@-webkit-keyframes bullet {
+  0% {
+    top: 178px;
+    left: 160px;
+  }
+
+  80% {
+    top: 17%;
+    left: 400px;
+    opacity: 1;
+  }
+
+  100% {
+    top: 17%;
+    left: 400px;
+    opacity: 0;
+  }
+}
+
+@keyframes bullet {
+  0% {
+    top: 178px;
+    left: 160px;
+  }
+
+  80% {
+    top: 17%;
+    left: 400px;
+    opacity: 1;
+  }
+
+  100% {
+    top: 17%;
+    left: 400px;
+    opacity: 0;
+  }
+}
+
+img.duck {
+  width: 15%;
+  height: auto;
+  left: -100px;
+  position: absolute;
+  -webkit-animation: duck 3.5s 1.5s linear;
+  animation: duck 3.5s 1.5s linear;
+}
+
+@-webkit-keyframes duck {
+  0% {
+    top: 40%;
+    left: 100%;
+  }
+
+  65% {
+    top: 10%;
+    left: 360px;
+  }
+
+  100% {
+    top: 95%;
+    left: 360px;
+  }
+}
+
+@keyframes duck {
+  0% {
+    top: 40%;
+    left: 100%;
+  }
+
+  65% {
+    top: 10%;
+    left: 360px;
+  }
+
+  100% {
+    top: 95%;
+    left: 360px;
+  }
+}
+
+.fireworks {
+  height: 2px;
+  width: 2px;
+  position: absolute;
+  left: -100px;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+  -webkit-animation: fireworks 5s 4s ease-out;
+  animation: fireworks 5s 4s ease-out;
+}
+
+.fireworks .fireworks1 {
+  background: red;
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.fireworks .fireworks2 {
+  background: blue;
+  -webkit-transform: rotate(73deg);
+  -ms-transform: rotate(73deg);
+  transform: rotate(73deg);
+}
+
+.fireworks .fireworks3 {
+  background: green;
+  -webkit-transform: rotate(108deg);
+  -ms-transform: rotate(108deg);
+  transform: rotate(108deg);
+}
+
+.fireworks .fireworks4 {
+  background: orange;
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+
+@-webkit-keyframes fireworks {
+  0% {
+    top: 16%;
+    left: 50%;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    top: 7%;
+    left: 40%;
+    opacity: 1;
+    height: 180px;
+  }
+}
+
+@keyframes fireworks {
+  0% {
+    top: 16%;
+    left: 50%;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    top: 7%;
+    left: 40%;
+    opacity: 1;
+    height: 180px;
+  }
+}
+
+25% {
+  opacity: 0;
+}
+
+50% {
+  opacity: 1;
+}
+
+75% {
+  opacity: 0;
+}

@@ -1,0 +1,220 @@
+$screen-width: 800px;
+$screen-height: 500px;
+$end-pos-top: 17%;
+$end-pos-left: $screen-width/2;
+
+.wrapper {
+  background-color: lightblue;
+  position:relative;
+  width: $screen-width;
+  height: $screen-height;
+}
+
+img.guy {
+  height:auto;
+  width:15%;
+  margin-top:22%;
+  margin-left: 7%;
+  transform:rotate(-14deg);
+}
+  
+/*********
+***********     BULLET   ********************
+*********************************************/
+ .beam {
+   position:absolute;
+   left:-100px;
+   height:20px;
+   width:4px;
+   background:red;
+   transform:rotate(75deg);
+   animation:bullet 1s 3s linear;
+ }
+
+@keyframes bullet {
+    0% {  
+       top:178px;
+       left:160px;
+     }
+    
+    80% {
+      top: $end-pos-top;
+      left: $end-pos-left;
+      opacity: 1;
+    }
+
+    100% {
+       top: $end-pos-top;
+      left: $end-pos-left;
+      opacity: 0;
+    }
+  }
+
+// DISK      ******************************
+
+
+img.duck {
+  width:15%;
+  height:auto;
+  left:-100px;
+  position:absolute;
+  animation: duck 3.5s 1.5s linear;
+  
+}
+
+@keyframes duck {
+    0% {      
+        top: 40%;
+        left: 100%;
+     }
+     
+     65% {
+        top: $end-pos-top - 7%;
+        left:$end-pos-left - 40px;
+       
+     }
+
+     100% {
+        top:95%;
+        left:$end-pos-left - 40px;
+        
+        
+     }
+  }
+ 
+// *************FEATHERS**********************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fireworks {
+  height:2px;
+  width:2px;
+  position:absolute;
+  left:-100px;
+  filter: blur(1px);
+  animation: fireworks 5s 4s ease-out; 
+
+    .fireworks1 {
+      background:red;
+       transform:rotate(30deg);
+       
+
+    }
+    .fireworks2 {
+      background:blue;
+      transform:rotate(73deg);
+    }
+     .fireworks3 {
+      background:green;
+      transform:rotate(108deg);
+    }                  
+    .fireworks4 {
+      background:orange;
+       transform:rotate(150deg);
+    }    
+}
+
+@keyframes fireworks {
+
+    0% {  
+      top: 16%;
+      left: 50%;
+      opacity: 1;
+     }
+    
+     //  25% {
+     //  opacity:0
+     // }
+
+     50% {
+      opacity:0
+     }
+
+     // 75% {
+     //  opacity:0
+     // }
+
+
+    100% {
+      top: 7%;
+      left: 40%;
+      opacity: 1;
+      height:180px;
+
+    }
+  }
+
+  
+// .fireworks-2 {
+//   height:2px;
+//   width:2px;
+//   position:absolute;
+//   left:-200px;
+//   filter: blur(1px);
+//   animation: fireworkss 4s 4s ease-out; 
+
+//   .fireworks1 {
+//       background:red;
+//        transform:rotate(30deg);
+//     }
+
+//     .fireworks2 {
+//       background:blue;
+//       transform:rotate(73deg);
+//     }
+//      .fireworks3 {
+//       background:green;
+//       transform:rotate(108deg);
+//     }                  
+//     .fireworks4 {
+//       background:orange;
+//        transform:rotate(150deg);
+//     }    
+//   }
+
+
+
+  // @keyframes fireworkss {
+
+  //   0% {  
+  //     top: 15%;
+  //     left: 75%;
+  //     opacity: 1;
+  //    }
+
+    25% {
+      opacity:0
+     }
+
+     50% {
+      opacity:1
+     }
+
+     75% {
+      opacity:0
+     }
+
+  //   100% {
+  //     top: 10%;
+  //     left: 75%;
+  //     opacity: 1;
+  //     height:180px;
+  //   }
+  // }
