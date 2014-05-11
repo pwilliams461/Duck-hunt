@@ -1,10 +1,10 @@
 $screen-width: 800px;
-$screen-height: 500px;
+$screen-height: 400px;
 $end-pos-top: 17%;
 $end-pos-left: $screen-width/2;
 
 .wrapper {
-  background-color: lightblue;
+  background: url("http://i61.tinypic.com/2hhht84.png");
   position:relative;
   width: $screen-width;
   height: $screen-height;
@@ -14,7 +14,7 @@ img.guy {
   height:auto;
   width:15%;
   margin-top:22%;
-  margin-left: 7%;
+  margin-left: 9%;
   transform:rotate(-14deg);
 }
   
@@ -28,7 +28,7 @@ img.guy {
    width:4px;
    background:red;
    transform:rotate(75deg);
-   animation:bullet 1s 3s linear;
+   animation:bullet 1s 3.3s linear;
  }
 
 @keyframes bullet {
@@ -50,15 +50,15 @@ img.guy {
     }
   }
 
-// DISK      ******************************
+// *********DUCK ******************************
 
 
 img.duck {
   width:15%;
   height:auto;
-  left:-100px;
+  left:-200px;
   position:absolute;
-  animation: duck 3.5s 1.5s linear;
+  animation: duck 4s 1.5s linear;
   
 }
 
@@ -85,20 +85,98 @@ img.duck {
 // *************FEATHERS**********************
 
 
+img.feathers-left {
+  width:10%;
+  height:auto;
+  position: absolute;
+  left: -200px;
+  animation: feather-left 1s 4s ease-out;
+  
+}
 
+@keyframes feather-left {
+    
+     0% {
+        top: 12%;
+        left:$end-pos-left;
+        width: 11%
+     }
+      
+      // 50% {
+      //   top:30%;
+      //   left:$end-pos-left - 40px;
+      //    width: 21%
+      //  }
+        
+     100% {
+        top:35%;
+        left:35%;
+         width: 12%
+     }
+  }
 
+  img.feathers-right {
+  width:4%;
+  height:auto;
+  position: absolute;
+  left: -200px;
+  animation: feather 1s 4s ease-out;
+  
+}
 
+@keyframes feather {
+    
+     0% {
+        top: 12%;
+        left:$end-pos-left;
+        width: 5%
+     }
+      
+      // 50% {
+      //   top:30%;
+      //   left:$end-pos-left - 40px;
+      //    width: 21%
+      //  }
+        
+     100% {
+        top:30%;
+        left:55%;
+         width: 6%
+     }
+  }
 
+/*********
+***********     DOG   ********************
+*********************************************/
 
+img.dog {
+  width:20%;
+  height:auto;
+  position: absolute;
+  left: -200px;
+  animation: dog 4s 6s linear forwards;
+  
+}
 
-
-
-
-
-
-
-
-
+@keyframes dog {
+    
+     0% {
+        top: 100%;
+        left:$end-pos-left - 40px;
+        
+     }
+      
+      50% {
+        top: 80%;
+        left:$end-pos-left - 40px;
+        
+     }
+     100% {
+        top:60%;
+        left:$end-pos-left - 40px;
+        
+     }
+  }
 
 
 
