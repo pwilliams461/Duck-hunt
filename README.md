@@ -1,4 +1,4 @@
-Bullet Animation
+Duck Hunt Animation
 ================
 
-##Collision, Fireworks, Explosions,
+##Let's go duck hunting
