@@ -1,8 +1,30 @@
 .wrapper {
   background: url("http://i61.tinypic.com/2hhht84.png");
+  -webkit-animation: flash 2s 8s ease-in-out;
+  animation: flash 2s 8s ease-in-out;
   position: relative;
   width: 800px;
   height: 400px;
+}
+
+@-webkit-keyframes flash {
+  0%, 50%, 100% {
+    background: #67a6ff;
+  }
+
+  25%, 75% {
+    background: #b51f1d;
+  }
+}
+
+@keyframes flash {
+  0%, 50%, 100% {
+    background: #67a6ff;
+  }
+
+  25%, 75% {
+    background: #b51f1d;
+  }
 }
 
 img.guy {

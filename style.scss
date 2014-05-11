@@ -5,10 +5,26 @@ $end-pos-left: $screen-width/2;
 
 .wrapper {
   background: url("http://i61.tinypic.com/2hhht84.png");
+  animation: flash 2s 8s ease-in-out;
   position:relative;
   width: $screen-width;
   height: $screen-height;
+  
 }
+
+
+
+@keyframes flash {
+    0%,50%,100% {  
+       background:#67A6FF
+     }
+    
+    25%,75%  {
+      background:#b51f1d
+    }
+
+  
+  }
 
 img.guy {
   height:auto;
