@@ -3,12 +3,15 @@ $screen-height: 400px;
 $end-pos-top: 17%;
 $end-pos-left: $screen-width/2;
 
+
+
 .wrapper {
   background: url("http://i61.tinypic.com/2hhht84.png");
-  animation: flash 2s 8s ease-in-out;
+  animation: flash 2s 8.5s ease-in-out;
   position:relative;
   width: $screen-width;
   height: $screen-height;
+ 
   
 }
 
@@ -29,7 +32,7 @@ $end-pos-left: $screen-width/2;
 img.guy {
   height:auto;
   width:15%;
-  margin-top:22%;
+  margin-top:20%;
   margin-left: 9%;
   transform:rotate(-14deg);
 }
@@ -49,7 +52,7 @@ img.guy {
 
 @keyframes bullet {
     0% {  
-       top:178px;
+       top:168px;
        left:160px;
      }
     
@@ -170,145 +173,32 @@ img.dog {
   height:auto;
   position: absolute;
   left: -200px;
-  animation: dog 4s 6s linear forwards;
+  animation: dog 3s 6s linear forwards;
+  
   
 }
 
 @keyframes dog {
     
      0% {
-        top: 100%;
+        top: 90%;
         left:$end-pos-left - 40px;
+        opacity:0;
         
      }
       
       50% {
-        top: 80%;
+        top: 70%;
         left:$end-pos-left - 40px;
+        opacity:1;
         
      }
      100% {
         top:60%;
         left:$end-pos-left - 40px;
-        
+         opacity:1;
      }
   }
 
 
 
-
-.fireworks {
-  height:2px;
-  width:2px;
-  position:absolute;
-  left:-100px;
-  filter: blur(1px);
-  animation: fireworks 5s 4s ease-out; 
-
-    .fireworks1 {
-      background:red;
-       transform:rotate(30deg);
-       
-
-    }
-    .fireworks2 {
-      background:blue;
-      transform:rotate(73deg);
-    }
-     .fireworks3 {
-      background:green;
-      transform:rotate(108deg);
-    }                  
-    .fireworks4 {
-      background:orange;
-       transform:rotate(150deg);
-    }    
-}
-
-@keyframes fireworks {
-
-    0% {  
-      top: 16%;
-      left: 50%;
-      opacity: 1;
-     }
-    
-     //  25% {
-     //  opacity:0
-     // }
-
-     50% {
-      opacity:0
-     }
-
-     // 75% {
-     //  opacity:0
-     // }
-
-
-    100% {
-      top: 7%;
-      left: 40%;
-      opacity: 1;
-      height:180px;
-
-    }
-  }
-
-  
-// .fireworks-2 {
-//   height:2px;
-//   width:2px;
-//   position:absolute;
-//   left:-200px;
-//   filter: blur(1px);
-//   animation: fireworkss 4s 4s ease-out; 
-
-//   .fireworks1 {
-//       background:red;
-//        transform:rotate(30deg);
-//     }
-
-//     .fireworks2 {
-//       background:blue;
-//       transform:rotate(73deg);
-//     }
-//      .fireworks3 {
-//       background:green;
-//       transform:rotate(108deg);
-//     }                  
-//     .fireworks4 {
-//       background:orange;
-//        transform:rotate(150deg);
-//     }    
-//   }
-
-
-
-  // @keyframes fireworkss {
-
-  //   0% {  
-  //     top: 15%;
-  //     left: 75%;
-  //     opacity: 1;
-  //    }
-
-    25% {
-      opacity:0
-     }
-
-     50% {
-      opacity:1
-     }
-
-     75% {
-      opacity:0
-     }
-
-  //   100% {
-  //     top: 10%;
-  //     left: 75%;
-  //     opacity: 1;
-  //     height:180px;
-  //   }
-  // }

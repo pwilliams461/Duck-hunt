@@ -1,7 +1,7 @@
 .wrapper {
   background: url("http://i61.tinypic.com/2hhht84.png");
-  -webkit-animation: flash 2s 8s ease-in-out;
-  animation: flash 2s 8s ease-in-out;
+  -webkit-animation: flash 2s 8.5s ease-in-out;
+  animation: flash 2s 8.5s ease-in-out;
   position: relative;
   width: 800px;
   height: 400px;
@@ -30,7 +30,7 @@
 img.guy {
   height: auto;
   width: 15%;
-  margin-top: 22%;
+  margin-top: 20%;
   margin-left: 9%;
   -webkit-transform: rotate(-14deg);
   -ms-transform: rotate(-14deg);
@@ -56,7 +56,7 @@ img.guy {
 
 @-webkit-keyframes bullet {
   0% {
-    top: 178px;
+    top: 168px;
     left: 160px;
   }
 
@@ -75,7 +75,7 @@ img.guy {
 
 @keyframes bullet {
   0% {
-    top: 178px;
+    top: 168px;
     left: 160px;
   }
 
@@ -218,129 +218,46 @@ img.dog {
   height: auto;
   position: absolute;
   left: -200px;
-  -webkit-animation: dog 4s 6s linear forwards;
-  animation: dog 4s 6s linear forwards;
+  -webkit-animation: dog 3s 6s linear forwards;
+  animation: dog 3s 6s linear forwards;
 }
 
 @-webkit-keyframes dog {
   0% {
-    top: 100%;
+    top: 90%;
     left: 360px;
+    opacity: 0;
   }
 
   50% {
-    top: 80%;
+    top: 70%;
     left: 360px;
+    opacity: 1;
   }
 
   100% {
     top: 60%;
     left: 360px;
+    opacity: 1;
   }
 }
 
 @keyframes dog {
   0% {
-    top: 100%;
+    top: 90%;
     left: 360px;
+    opacity: 0;
   }
 
   50% {
-    top: 80%;
+    top: 70%;
     left: 360px;
+    opacity: 1;
   }
 
   100% {
     top: 60%;
     left: 360px;
-  }
-}
-
-.fireworks {
-  height: 2px;
-  width: 2px;
-  position: absolute;
-  left: -100px;
-  -webkit-filter: blur(1px);
-  filter: blur(1px);
-  -webkit-animation: fireworks 5s 4s ease-out;
-  animation: fireworks 5s 4s ease-out;
-}
-
-.fireworks .fireworks1 {
-  background: red;
-  -webkit-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  transform: rotate(30deg);
-}
-
-.fireworks .fireworks2 {
-  background: blue;
-  -webkit-transform: rotate(73deg);
-  -ms-transform: rotate(73deg);
-  transform: rotate(73deg);
-}
-
-.fireworks .fireworks3 {
-  background: green;
-  -webkit-transform: rotate(108deg);
-  -ms-transform: rotate(108deg);
-  transform: rotate(108deg);
-}
-
-.fireworks .fireworks4 {
-  background: orange;
-  -webkit-transform: rotate(150deg);
-  -ms-transform: rotate(150deg);
-  transform: rotate(150deg);
-}
-
-@-webkit-keyframes fireworks {
-  0% {
-    top: 16%;
-    left: 50%;
     opacity: 1;
   }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    top: 7%;
-    left: 40%;
-    opacity: 1;
-    height: 180px;
-  }
-}
-
-@keyframes fireworks {
-  0% {
-    top: 16%;
-    left: 50%;
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    top: 7%;
-    left: 40%;
-    opacity: 1;
-    height: 180px;
-  }
-}
-
-25% {
-  opacity: 0;
-}
-
-50% {
-  opacity: 1;
-}
-
-75% {
-  opacity: 0;
 }
