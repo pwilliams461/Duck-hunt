@@ -1,7 +1,7 @@
 .wrapper {
   background: url("http://i61.tinypic.com/2hhht84.png");
-  -webkit-animation: flash 2s 8.5s ease-in-out;
-  animation: flash 2s 8.5s ease-in-out;
+  -webkit-animation: flash 1.5s 8.5s ease-in-out;
+  animation: flash 1.5s 8.5s ease-in-out;
   position: relative;
   width: 800px;
   height: 400px;
@@ -92,7 +92,7 @@ img.guy {
   }
 }
 
-img.duck {
+.duck {
   width: 15%;
   height: auto;
   left: -200px;
@@ -132,6 +132,42 @@ img.duck {
   100% {
     top: 95%;
     left: 360px;
+  }
+}
+
+img.duck-wing {
+  position: absolute;
+  width: 35%;
+  height: auto;
+  top: 20%;
+  left: 55%;
+  -webkit-animation: duckwing 0.4s linear alternate;
+  animation: duckwing 0.4s linear alternate;
+  -webkit-animation-iteration-count: 10;
+  animation-iteration-count: 10;
+}
+
+@-webkit-keyframes duckwing {
+  0% {
+    top: 20%;
+    left: 58%;
+  }
+
+  100% {
+    top: 28%;
+    left: 60%;
+  }
+}
+
+@keyframes duckwing {
+  0% {
+    top: 20%;
+    left: 58%;
+  }
+
+  100% {
+    top: 28%;
+    left: 60%;
   }
 }
 
